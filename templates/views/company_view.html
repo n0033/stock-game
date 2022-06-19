@@ -1,0 +1,104 @@
+<!doctype html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../../static/css/style.css" media="screen"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+  {{ template "navbar" .}}
+  <div class="row justify-content-center vh-100 main-div">
+		<div class="col-11 p-0 h-75 align-self-center rounded form-div position-relative">
+
+      <div class="row">
+        <div class="col">
+          <div class="row justify-content-center p-5">
+            <p class="company-description">
+              Code: {{ .data.Symbol }}<br>
+            {{ if .data.Company }}
+              Name: {{ .data.Company.Name }}<br>
+              Country: {{ .data.Company.Country }}<br>
+              Sector: {{ .data.Company.Sector }}<br>
+              Industry: {{ .data.Company.Industry }}
+            {{ end }}
+            </p>
+          </div>
+          <div class="row ps-5">
+            <p class="company-price">Price: {{ .data.Price }}$</p>
+          </div>
+        </div>
+        <div class="col-7">
+          <div class="row justify-content-end h-100">
+            <div class="col-10">
+              <svg width="800" height="240"></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mw-100">
+        <div class="row">
+          <div class="col">
+            <div class="row justify-content-center pt-3">
+              <p class="slider-description">Buy asset</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row justify-content-center pt-3">
+              <p class="slider-description">Sell asset</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row p-3">
+          <div class="col">
+            <div class="row justify-content-center">
+              <form>
+                <div class="mb-3">
+                  <label id="buy-label" for="buy-slider" class="form-label">Value</label>
+                  <input id="buy-slider" type="range" class="form-range" min="0" max="{{ .max_buy }}" step="0.01">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row justify-content-center">
+              <form>
+                <div class="mb-3">
+                  <label id="sell-label" for="sell-slider" class="form-label">Value</label>
+                  <input id="sell-slider" type="range" class="form-range" min="0" max="{{ .max_sell }}" step="0.01">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <div class="row justify-content-center">
+              <button id="buy-button" type="submit" class="btn btn-primary w-25">Buy</button>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row justify-content-center">
+              <button id="sell-button" type="submit" class="btn btn-primary w-25">Sell</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-center mt-2">
+          <div class="col-6">
+            <div id="messages-div" class="row text-center justify-content-center">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="/static/js/graph.js"></script>
+  <script type="text/javascript" src="/static/js/sliders.js"></script>
+  <script type="text/javascript" src="/static/js/asset.js"></script>
+</body>

@@ -1,0 +1,14 @@
+# Binaries, plugins, libs
+*.dll
+*.dylib
+*.exe
+*.exe~
+*.so
+
+# Environment variables
+.env
+.docker-env
+
+# Testing
+*.test
+*.tmp
