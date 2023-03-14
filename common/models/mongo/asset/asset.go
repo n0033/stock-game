@@ -1,7 +1,7 @@
 package asset
 
 import (
-	"github.com/ktylus/stock-game/common/models/utils"
+	"github.com/n0033/stock-game/common/models/utils"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

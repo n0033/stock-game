@@ -4,11 +4,11 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
-	authorization_dao "github.com/ktylus/stock-game/common/dao/authorization"
-	user_dao "github.com/ktylus/stock-game/common/dao/user"
-	user_models "github.com/ktylus/stock-game/common/models/mongo/user"
-	auth_models "github.com/ktylus/stock-game/common/models/resources/auth"
-	passwords "github.com/ktylus/stock-game/common/security/password_handler"
+	authorization_dao "github.com/n0033/stock-game/common/dao/authorization"
+	user_dao "github.com/n0033/stock-game/common/dao/user"
+	user_models "github.com/n0033/stock-game/common/models/mongo/user"
+	auth_models "github.com/n0033/stock-game/common/models/resources/auth"
+	passwords "github.com/n0033/stock-game/common/security/password_handler"
 )
 
 func Authorize(request auth_models.LoginRequest) (user_models.UserInDB, bool) {

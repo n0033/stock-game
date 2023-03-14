@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/ktylus/stock-game/config"
-	av_adapter "github.com/ktylus/stock-game/services/adapter/alpha_vantage"
-	av_connector "github.com/ktylus/stock-game/services/api_connector/connectors/alpha_vantage"
+	"github.com/n0033/stock-game/config"
+	av_adapter "github.com/n0033/stock-game/services/adapter/alpha_vantage"
+	av_connector "github.com/n0033/stock-game/services/api_connector/connectors/alpha_vantage"
 )
 
 var CONNECTOR = av_connector.GetAlphaVantageConnector()

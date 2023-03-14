@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 
 	"github.com/gofiber/fiber/v2"
-	models_asset "github.com/ktylus/stock-game/common/models/mongo/asset"
-	models_asset_view "github.com/ktylus/stock-game/common/models/resources/asset"
-	"github.com/ktylus/stock-game/services/asset/manager"
+	models_asset "github.com/n0033/stock-game/common/models/mongo/asset"
+	models_asset_view "github.com/n0033/stock-game/common/models/resources/asset"
+	"github.com/n0033/stock-game/services/asset/manager"
 
-	security_user "github.com/ktylus/stock-game/common/security/user"
+	security_user "github.com/n0033/stock-game/common/security/user"
 )
 
 func Buy(c *fiber.Ctx) error {

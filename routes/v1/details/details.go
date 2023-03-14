@@ -2,7 +2,7 @@ package authorization
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/ktylus/stock-game/handlers/v1/details"
+	"github.com/n0033/stock-game/handlers/v1/details"
 )
 
 func ApplyRoutes(router fiber.Router) {

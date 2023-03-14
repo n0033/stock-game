@@ -3,8 +3,8 @@ package stock_datapoint
 import (
 	"time"
 
-	models_av "github.com/ktylus/stock-game/common/models/resources/alpha_vantage"
-	"github.com/ktylus/stock-game/common/models/utils"
+	models_av "github.com/n0033/stock-game/common/models/resources/alpha_vantage"
+	"github.com/n0033/stock-game/common/models/utils"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 

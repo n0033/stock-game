@@ -1,8 +1,8 @@
 package portfolio
 
 import (
-	models_user "github.com/ktylus/stock-game/common/models/mongo/user"
-	models_asset "github.com/ktylus/stock-game/common/models/resources/asset"
+	models_user "github.com/n0033/stock-game/common/models/mongo/user"
+	models_asset "github.com/n0033/stock-game/common/models/resources/asset"
 )
 
 type PortfolioResponse struct {

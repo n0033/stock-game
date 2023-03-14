@@ -1,7 +1,7 @@
 package asset
 
 import (
-	models_asset "github.com/ktylus/stock-game/common/models/mongo/asset"
+	models_asset "github.com/n0033/stock-game/common/models/mongo/asset"
 )
 
 type AssetTransactionRequest struct {

@@ -1,4 +1,4 @@
-module github.com/ktylus/stock-game
+module github.com/n0033/stock-game
 
 go 1.18
 

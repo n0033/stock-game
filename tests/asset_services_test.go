@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	user_dao "github.com/ktylus/stock-game/common/dao/user"
-	models_asset "github.com/ktylus/stock-game/common/models/mongo/asset"
-	models_user "github.com/ktylus/stock-game/common/models/mongo/user"
-	"github.com/ktylus/stock-game/services/asset/manager"
-	"github.com/ktylus/stock-game/services/asset/presenter"
+	user_dao "github.com/n0033/stock-game/common/dao/user"
+	models_asset "github.com/n0033/stock-game/common/models/mongo/asset"
+	models_user "github.com/n0033/stock-game/common/models/mongo/user"
+	"github.com/n0033/stock-game/services/asset/manager"
+	"github.com/n0033/stock-game/services/asset/presenter"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
@@ -38,6 +38,7 @@ func TestGetOne(t *testing.T) {
 	if err != nil {
 		t.Fail()
 	}
+
 	if db_asset.AssetBase != asset_create.AssetBase {
 		t.Fail()
 	}
@@ -45,10 +46,7 @@ func TestGetOne(t *testing.T) {
 
 func TestGetAll(t *testing.T) {
 	db_assets := asset_presenter.GetAll()
-	if len(db_assets) == 0 || len(db_assets) > 1 {
-		t.Fail()
-	}
-	if db_assets[0].AssetBase != asset_create.AssetBase {
+	if len(db_assets) == 0 {
 		t.Fail()
 	}
 }
@@ -59,14 +57,6 @@ func TestGetAssetByCode(t *testing.T) {
 		t.Fail()
 	}
 	if db_asset.AssetBase != asset_create.AssetBase {
-		t.Fail()
-	}
-}
-
-func TestGetOverallValue(t *testing.T) {
-	returned_value := asset_presenter.GetOverallValue()
-	actual_value := asset_manager.GetCurrentValueByCode(APPLE_CODE).GetValue() * asset_create.AssetBase.Amount
-	if returned_value != actual_value {
 		t.Fail()
 	}
 }

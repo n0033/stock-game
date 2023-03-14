@@ -4,9 +4,9 @@ import (
 	"log"
 
 	"github.com/gofiber/fiber/v2"
-	authorization_dao "github.com/ktylus/stock-game/common/dao/authorization"
-	user_dao "github.com/ktylus/stock-game/common/dao/user"
-	models_user "github.com/ktylus/stock-game/common/models/mongo/user"
+	authorization_dao "github.com/n0033/stock-game/common/dao/authorization"
+	user_dao "github.com/n0033/stock-game/common/dao/user"
+	models_user "github.com/n0033/stock-game/common/models/mongo/user"
 )
 
 func GetUser(c *fiber.Ctx) models_user.UserInDB {

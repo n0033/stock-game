@@ -3,9 +3,9 @@ package details
 import (
 	"time"
 
-	models_av "github.com/ktylus/stock-game/common/models/resources/alpha_vantage"
+	models_av "github.com/n0033/stock-game/common/models/resources/alpha_vantage"
 
-	models_user "github.com/ktylus/stock-game/common/models/mongo/user"
+	models_user "github.com/n0033/stock-game/common/models/mongo/user"
 )
 
 type AssetDetailsResponse struct {

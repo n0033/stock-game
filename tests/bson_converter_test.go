@@ -3,7 +3,7 @@ package tests
 import (
 	"testing"
 
-	convert "github.com/ktylus/stock-game/services/bson_converter"
+	convert "github.com/n0033/stock-game/services/bson_converter"
 	"go.mongodb.org/mongo-driver/bson"
 )
 

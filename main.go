@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html"
-	v1_router "github.com/ktylus/stock-game/routes/v1"
+	v1_router "github.com/n0033/stock-game/routes/v1"
 )
 
 func initiateApp() *fiber.App {

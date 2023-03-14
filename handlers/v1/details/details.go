@@ -6,19 +6,19 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 
-	models_user "github.com/ktylus/stock-game/common/models/mongo/user"
-	models_av "github.com/ktylus/stock-game/common/models/resources/alpha_vantage"
-	models_details "github.com/ktylus/stock-game/common/models/resources/details"
+	models_user "github.com/n0033/stock-game/common/models/mongo/user"
+	models_av "github.com/n0033/stock-game/common/models/resources/alpha_vantage"
+	models_details "github.com/n0033/stock-game/common/models/resources/details"
 
-	company_dao "github.com/ktylus/stock-game/common/dao/company"
+	company_dao "github.com/n0033/stock-game/common/dao/company"
 
-	"github.com/ktylus/stock-game/common/security/authorization"
-	security_user "github.com/ktylus/stock-game/common/security/user"
-	user_handlers "github.com/ktylus/stock-game/handlers/v1/user"
-	adapter "github.com/ktylus/stock-game/services/adapter/alpha_vantage"
-	alpha_vantage_connector "github.com/ktylus/stock-game/services/api_connector/connectors/alpha_vantage"
-	asset_manager "github.com/ktylus/stock-game/services/asset/manager"
-	asset_presenter "github.com/ktylus/stock-game/services/asset/presenter"
+	"github.com/n0033/stock-game/common/security/authorization"
+	security_user "github.com/n0033/stock-game/common/security/user"
+	user_handlers "github.com/n0033/stock-game/handlers/v1/user"
+	adapter "github.com/n0033/stock-game/services/adapter/alpha_vantage"
+	alpha_vantage_connector "github.com/n0033/stock-game/services/api_connector/connectors/alpha_vantage"
+	asset_manager "github.com/n0033/stock-game/services/asset/manager"
+	asset_presenter "github.com/n0033/stock-game/services/asset/presenter"
 )
 
 func Details(c *fiber.Ctx) error {

@@ -2,7 +2,7 @@ package asset
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/ktylus/stock-game/handlers/v1/asset"
+	"github.com/n0033/stock-game/handlers/v1/asset"
 )
 
 func ApplyRoutes(router fiber.Router) {

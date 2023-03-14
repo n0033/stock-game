@@ -2,13 +2,13 @@ package authorization
 
 import (
 	"github.com/gofiber/fiber/v2"
-	user_dao "github.com/ktylus/stock-game/common/dao/user"
-	models_user "github.com/ktylus/stock-game/common/models/mongo/user"
-	models_auth "github.com/ktylus/stock-game/common/models/resources/auth"
-	authorization "github.com/ktylus/stock-game/common/security/authorization"
-	password_handler "github.com/ktylus/stock-game/common/security/password_handler"
-	"github.com/ktylus/stock-game/config"
-	"github.com/ktylus/stock-game/utils"
+	user_dao "github.com/n0033/stock-game/common/dao/user"
+	models_user "github.com/n0033/stock-game/common/models/mongo/user"
+	models_auth "github.com/n0033/stock-game/common/models/resources/auth"
+	authorization "github.com/n0033/stock-game/common/security/authorization"
+	password_handler "github.com/n0033/stock-game/common/security/password_handler"
+	"github.com/n0033/stock-game/config"
+	"github.com/n0033/stock-game/utils"
 )
 
 func RegisterView(c *fiber.Ctx) error {

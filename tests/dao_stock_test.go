@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	stock_dao "github.com/ktylus/stock-game/common/dao/stock"
+	stock_dao "github.com/n0033/stock-game/common/dao/stock"
 )
 
 var dao_stock = stock_dao.NewDAOStock()

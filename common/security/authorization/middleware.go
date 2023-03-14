@@ -5,11 +5,11 @@ import (
 	"time"
 
 	"github.com/gofiber/fiber/v2"
-	authorization_dao "github.com/ktylus/stock-game/common/dao/authorization"
-	user_dao "github.com/ktylus/stock-game/common/dao/user"
-	models_user "github.com/ktylus/stock-game/common/models/mongo/user"
-	passwords "github.com/ktylus/stock-game/common/security/password_handler"
-	"github.com/ktylus/stock-game/config"
+	authorization_dao "github.com/n0033/stock-game/common/dao/authorization"
+	user_dao "github.com/n0033/stock-game/common/dao/user"
+	models_user "github.com/n0033/stock-game/common/models/mongo/user"
+	passwords "github.com/n0033/stock-game/common/security/password_handler"
+	"github.com/n0033/stock-game/config"
 )
 
 type Config struct {

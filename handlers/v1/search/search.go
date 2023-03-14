@@ -6,13 +6,13 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 
-	company_dao "github.com/ktylus/stock-game/common/dao/company"
-	crypto_dao "github.com/ktylus/stock-game/common/dao/cryptocurrency"
-	models_company "github.com/ktylus/stock-game/common/models/mongo/company"
-	models_av "github.com/ktylus/stock-game/common/models/resources/alpha_vantage"
-	models_search "github.com/ktylus/stock-game/common/models/resources/search"
-	av_adapter "github.com/ktylus/stock-game/services/adapter/alpha_vantage"
-	av_connector "github.com/ktylus/stock-game/services/api_connector/connectors/alpha_vantage"
+	company_dao "github.com/n0033/stock-game/common/dao/company"
+	crypto_dao "github.com/n0033/stock-game/common/dao/cryptocurrency"
+	models_company "github.com/n0033/stock-game/common/models/mongo/company"
+	models_av "github.com/n0033/stock-game/common/models/resources/alpha_vantage"
+	models_search "github.com/n0033/stock-game/common/models/resources/search"
+	av_adapter "github.com/n0033/stock-game/services/adapter/alpha_vantage"
+	av_connector "github.com/n0033/stock-game/services/api_connector/connectors/alpha_vantage"
 )
 
 func CompanySearch(c *fiber.Ctx) error {

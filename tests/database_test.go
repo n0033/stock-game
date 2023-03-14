@@ -3,7 +3,7 @@ package tests
 import (
 	"testing"
 
-	"github.com/ktylus/stock-game/services/database"
+	"github.com/n0033/stock-game/services/database"
 )
 
 func TestGetDatabase(t *testing.T) {

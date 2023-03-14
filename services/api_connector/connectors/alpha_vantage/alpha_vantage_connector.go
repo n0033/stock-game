@@ -9,9 +9,9 @@ import (
 	"strconv"
 
 	"github.com/gocarina/gocsv"
-	models_av "github.com/ktylus/stock-game/common/models/resources/alpha_vantage"
-	models_connector "github.com/ktylus/stock-game/common/models/resources/api_connector"
-	"github.com/ktylus/stock-game/config"
+	models_av "github.com/n0033/stock-game/common/models/resources/alpha_vantage"
+	models_connector "github.com/n0033/stock-game/common/models/resources/api_connector"
+	"github.com/n0033/stock-game/config"
 )
 
 type AlphaVantageConnector struct {

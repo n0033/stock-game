@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	config "github.com/ktylus/stock-game/config"
+	config "github.com/n0033/stock-game/config"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
 )

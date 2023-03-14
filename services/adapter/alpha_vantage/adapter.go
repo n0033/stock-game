@@ -8,9 +8,9 @@ import (
 	"strconv"
 	"time"
 
-	models "github.com/ktylus/stock-game/common/models/resources/alpha_vantage"
-	models_connector "github.com/ktylus/stock-game/common/models/resources/api_connector"
-	"github.com/ktylus/stock-game/config"
+	models "github.com/n0033/stock-game/common/models/resources/alpha_vantage"
+	models_connector "github.com/n0033/stock-game/common/models/resources/api_connector"
+	"github.com/n0033/stock-game/config"
 )
 
 func ToStockDatapoints(response models_connector.APIHTTPConnectorResponse) []models.StockDatapoint {

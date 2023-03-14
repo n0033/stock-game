@@ -3,8 +3,8 @@ package tests
 import (
 	"testing"
 
-	asset_dao "github.com/ktylus/stock-game/common/dao/asset"
-	models_asset "github.com/ktylus/stock-game/common/models/mongo/asset"
+	asset_dao "github.com/n0033/stock-game/common/dao/asset"
+	models_asset "github.com/n0033/stock-game/common/models/mongo/asset"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
